@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body background="pic.jpg">
+
+<h1><center>Welcome!</h1>
+<h3>Please start by entering your name</h3>
+<p><h5>Please follow the order of buttons</h5></p>
+<input id="numb">
+
+<p><button type="button" onclick="myFunction()">Submit</button>
+
+<p><button type="button" onclick="myFunction1()">Lets Start with Introduction</button>
+<p><button type="button" onclick="myFunction2()">Facts</button>
+
+<p id="demo"></p>
+
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+    y = "We are glad to have you "+ x+". Enjoy the game!";
+    document.getElementById("demo").innerHTML =y ;
+}
+
+function myFunction1() {
+    document.getElementById("demo").innerHTML = "A story of a 14 year old boy's quest to be home....Read the facts.";
+}
+function myFunction2() {
+    document.getElementById("demo").innerHTML = "<P>FACT1: The story takes place at Begusarai district in Bihar. It is known to be a bandit sensitive area</P><P>FACT2: Being a sensitive area, people are under constant threat. So avoid any outdoor activities when the sun goes down.</p><p>FACT3: The boy is returning from a boarding school in patna to his hometown of Nonpur. He considers himself old enough to travel alone</p><p>FACT4: First bus leaves for Nonpur at 5am</p><p>FACT5:The boy arrives at Begusarai around 10pm</p><p>FACT6:The boy was going home witout prior notice</p>";
+}
+
+</script>
+   
+
+</body>
+</html>
